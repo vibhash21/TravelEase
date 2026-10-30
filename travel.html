@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+.cointainer{
+    background-color: rgb(3, 3, 28);
+    color: white;
+    width: 100vw;
+    padding-top: 30px;
+    text-align: center;
+
+}
+
+.Hero{
+    background-color: rgb(32, 83, 211);
+    height: 90vh;
+    width: 100vw;
+    text-align: center;
+    padding-top: 3%;
+    color: white;
+    gap: 10px;
+    
+}
+img{
+    height: 70vh;
+    width: 95vw;
+    padding-top: 2%;
+    align-items: center;
+    border-radius: 10px ;
+}
+.mainbox{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px;
+
+}
+.box{
+    height: 20vh;
+    width: 40vh;
+    border: 1px ;
+    background-color: aquamarine;
+    border-radius: 3%;
+    margin: 20PX;
+    padding: 20px;
+}
+.link{
+           display: flex;
+            align-items: end;
+            gap: 30px;
+            list-style: none;
+            color: white;
+           text-align: center;
+           padding-left: 20%;
+}
+
+    .link a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+
+
+
+@media (min-width: 500px){
+    .mainbox{
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .link{
+           display: flex;
+            align-items: end;
+            gap: 30px;
+            list-style: none;
+            color: white;
+            padding-left: 80%;
+            padding-bottom: 2%;
+}
+.cointainer{
+    background-color: rgb(3, 3, 28);
+    color: white;
+    width: 100vw;
+    text-align: start;
+    
+}
+   
+}
+@media (min-width: 500px) and (max-width:1159px){
+    .mainbox{
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr ;
+
+    }
+    footer{
+    background-color: blue;
+    height: 15vh;
+    width: vh;
+    color: antiquewhite;
+    text-align: center;
+    font-size: 30px;
+    font-style:oblique;
+    flex-shrink: inherit;
+
+}
+
+}
+footer{
+    background-color:#2e5bea;
+    height: 15vh;
+    width: vh;
+    color: antiquewhite;
+    text-align: center;
+    font-size: 30px;
+    font-style:oblique;
+
+}
+
+</style>
+<body>
+    <div class="cointainer">
+      <h2>TravelEase</h2>
+      <ul class="link">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </div>
+    <section class="Hero">
+        <h1>Plan Your Next Trip In MInutes</h1>
+        <p>Simple  cheap and fun travel plans</p>
+        <img src="/pages/images/mountain.jpg" alt="">
+    </section>
+    <section class="mainbox">
+        <div class="box">
+            <h3>Easy Booking</h3>
+            <p>Book in 3 clicks.</p>
+        </div>
+        <div class="box">
+            <h3>Best Prices</h3>
+            <p>We compare for you.</p>
+        </div>
+        <div class="box">
+             <h3>24x7 Help</h3>
+            <p>We are always online.</p>
+        </div>
+    </section>
+    <footer>Made by a first year student</footer>
+</body>
+</html>
